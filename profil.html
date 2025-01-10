@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Aplikasi Penjualan Barang</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F6F6; 
+        }
+
+        header {
+            background-color: #2980B9; 
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #34495E;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+
+        ul li.feature-box {
+            background-color: #ECF0F1; 
+            border: 1px solid #BDC3C7; 
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px; 
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        ul li.feature-box:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+        }
+
+        ul li.feature-box strong {
+            color: #2C3E50; 
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        footer {
+            background-color: #2980B9; 
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+
+        .contact-section {
+            background-color: #F4F6F6;
+            padding: 40px 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #2980B9;
+        }
+
+        .contact-section p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .contact-section a {
+            color: #2980B9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.avif" alt="Logo Aplikasi">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="container">
+        <h1>Profil StyleSquare</h1>
+        <p>Halaman ini memberikan deskripsi singkat tentang fitur-fitur utama dalam aplikasi StyleSquare. Berikut adalah daftar halaman dan kegunaannya:</p>
+        <ul>
+            <li class="feature-box">
+                <strong>Beranda</strong>
+                <p>Halaman utama aplikasi StyleSquare. Di sini Anda dapat melihat daftar produk unggulan kami seperti jam tangan, tas wanita, sepatu, baju, kacamata, dan dompet. Anda juga dapat langsung melakukan transaksi dari halaman ini.</p>
+            </li>
+            <li class="feature-box">
+                <strong>Login</strong>
+                <p>Halaman untuk pengguna masuk ke dalam aplikasi. Masukkan username dan password Anda untuk mendapatkan akses penuh ke fitur aplikasi, termasuk transaksi dan pengelolaan profil.</p>
+            </li>
+            <li class="feature-box">
+                <strong>Profil</strong>
+                <p>Halaman ini berisi deskripsi singkat tentang setiap halaman di aplikasi StyleSquare. Tujuan dari halaman ini adalah membantu pengguna memahami fitur dan fungsionalitas aplikasi secara menyeluruh.</p>
+            </li>
+            <li class="feature-box">
+                <strong>Transaksi</strong>
+                <p>Halaman untuk melakukan pencatatan transaksi pembelian. Anda dapat mengisi detail produk seperti nama barang, kategori, dan jumlah yang dibeli. Data transaksi akan disimpan secara lokal untuk kebutuhan pengguna.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="contact-section">
+        <h2>Hubungi Kami</h2>
+        <p>Jika Anda memiliki pertanyaan atau membutuhkan bantuan lebih lanjut, Anda dapat menghubungi kami melalui:</p>
+        <p>Email: <a href="mailto:support@stylesquare.com">support@stylesquare.com</a></p>
+        <p>Telepon: 085777352193</p>
+        <p>Atau kunjungi kantor kami di alamat berikut:</p>
+        <p>Jl.lurus No. 123, Jakarta, Indonesia</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 StyleSquare</p>
+    </footer>
+</body>
+</html>

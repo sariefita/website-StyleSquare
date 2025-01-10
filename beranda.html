@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleSquare</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F6F6; 
+        }
+
+        header {
+            background-color: #2980B9; 
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #34495E;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 280px;
+            height: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 10px;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .gallery-item h3 {
+            font-size: 16px;
+            color: #2980B9; 
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .gallery-item p {
+            font-size: 12px;
+            text-align: center;
+            color: #7F8C8D; 
+            margin-bottom: 10px;
+        }
+
+        .gallery-item .price {
+            font-size: 16px;
+            color: #E74C3C;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #2980B9; 
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .gallery-item img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.avif" alt="Logo StyleSquare">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="beranda" class="container">
+        <h1>Selamat Datang di StyleSquare</h1>
+        <p>Temukan barang-barang terbaik kami yang akan menambah gaya hidup Anda.</p>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="jam tangan.jpg" alt="jam">
+                <h3>Jam Tangan</h3>
+                <p>Jam tangan mewah dengan desain elegan, cocok untuk acara formal.</p>
+                <p class="price">Rp 1.500.000</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="tas.jpg" alt="tas">
+                <h3>Tas Wanita</h3>
+                <p>Tas kulit premium dengan desain elegan, pilihan terbaik.</p>
+                <p class="price">Rp 500.000</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="sepatu.jpg" alt="sepatu">
+                <h3>Sepatu</h3>
+                <p>Sepatu kasual bergaya modern, nyaman untuk aktivitas sehari-hari.</p>
+                <p class="price">Rp 800.000</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="baju.jpg" alt="baju">
+                <h3>Baju</h3>
+                <p>Baju trendi dengan bahan berkualitas tinggi, nyaman dipakai.</p>
+                <p class="price">Rp 250.000</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="kacamata.jpg" alt="kacamata">
+                <h3>Kacamata</h3>
+                <p>Kacamata modern yang melindungi mata Anda dari sinar UV.</p>
+                <p class="price">Rp 350.000</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="dompet.jpg" alt="dompet">
+                <h3>Dompet</h3>
+                <p>Dompet kulit minimalis, cocok untuk keperluan sehari-hari.</p>
+                <p class="price">Rp 250.000</p>
+            </div>
+        </div>
+
+        <p style="text-align: center;">
+            <a href="transaksi.html" style="text-decoration: none; font-size: 18px; color: #2980B9;">Klik di sini untuk melakukan transaksi</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 StyleSquare</p>
+    </footer>
+
+    <script>
+        let no = 1;
+
+        function simpanTransaksi() {
+            const namaBarang = document.getElementById("nama_barang").value.trim();
+            const kategori = document.getElementById("kategori").value.trim();
+            const jumlah = document.getElementById("jumlah").value;
+
+            if (!namaBarang || !kategori || !jumlah) {
+                alert("Harap lengkapi semua data!");
+                return;
+            }
+
+            const tableBody = document.getElementById("transaksiTable");
+            const row = document.createElement("tr");
+
+            row.innerHTML = `
+                <td>${no++}</td>
+                <td>${namaBarang}</td>
+                <td>${kategori}</td>
+                <td>${jumlah}</td>
+            `;
+
+            tableBody.appendChild(row);
+
+            alert("Transaksi berhasil disimpan!");
+            document.getElementById("transaksiForm").reset();
+        }
+    </script>
+</body>
+</html>
